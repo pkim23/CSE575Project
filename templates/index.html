@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Prediction</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="text">Enter your text:</label><br>
+        <input type="text" id="text" name="text"><br>
+        <input type="submit" value="Predict Emotion">
+    </form>
+    {% if emotion %}
+    <p>Predicted Emotion: {{ emotion }}</p>
+    {% endif %}
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Emotion Prediction</h2>
+        <form  method="POST">
+            <div class="user-box">
+                <input type="text" id="text" name="text"><br>
+                <!-- <input type="submit" value="Predict Emotion"> -->
+                <label>Enter Text</label>
+            </div>
+            <button type="submit" class="styled-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Predict Emotion
+            </button>
+        </form>
+        <div class="user-box">
+        {% if emotion %}
+        <p>Predicted Emotion: {{ emotion }}</p>
+        {% endif %}
+    </div>
+    </div>
+</body>
+</html>
