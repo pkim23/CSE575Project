@@ -10,11 +10,11 @@ All the required dependencies are listed in the `requirements.txt` file. To inst
 pip install -r requirements.txt
 ```
 
-##Code Repository
+## Code Repository
 
 The training code is located in `train.ipynb` and `train.py`, which contain identical code. The dataset is located in the `dataset` folder. The exported models are stored in the `model` folder.
 
-##How to Run
+## How to Run
 To run the setup code, execute the following command:
 ```bash
 python app.py
